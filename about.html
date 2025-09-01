@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Kuakata Park & Resort</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      margin: 0; padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      background: #ffffffee;
+      backdrop-filter: blur(6px);
+      position: sticky; top: 0; z-index: 1000;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    header img {
+      height: 90px;
+      transition: transform 0.3s;
+    }
+    header img:hover { transform: scale(1.08); }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #0077cc; }
+
+    /* Hero Banner */
+    .hero {
+      background: url('coverphoto.png') center/cover no-repeat;
+      height: 280px;
+      display: flex; align-items: center; justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeSlide 1.5s ease forwards;
+    }
+    @keyframes fadeSlide {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* About Section */
+    .about-container {
+      padding: 3rem;
+      max-width: 1100px;
+      margin: auto;
+      line-height: 1.7;
+    }
+    .about-container h2 {
+      color: #0077cc;
+      margin-bottom: 1rem;
+    }
+
+    /* Facebook Video */
+    .video-container {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .video-container h2 {
+      margin-bottom: 1rem;
+      color: #0077cc;
+    }
+
+    /* Features Grid */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .feature-card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    .feature-card h3 {
+      color: #0077cc;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: #fff;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="logo.png" alt="K Park Resort Logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="booking.html">Booking</a>
+        <a href="buyshare.html">Buy Share</a>
+        <a href="contacts.html">Contact</a>
+        
+      </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>About Us</h1>
+  </section>
+
+  <section class="about-container">
+    <!-- Resort Description -->
+    <h2>Welcome to Kuakata Park & Resort</h2>
+    <p>
+        ২০২৭ সালে প্রতিষ্ঠিত, কুয়াকাটা পার্ক ও রিসর্ট কুয়াকাটার অন্যতম শান্তিপূর্ণ ও 
+        বিলাসবহুল ছুটি গন্তব্য। প্রাকৃতিক সৌন্দর্যে ঘেরা, রিসর্টটি অতিথিদের একটি অবিস্মরণীয় বিশ্রাম এবং আরামের সংমিশ্রণ প্রদান করে।
+    </p>
+    <p>
+        বছরগুলোর মধ্যে, ক পার্ক রিসর্ট বিশ্বমানের আতিথেয়তা, মনোরম পরিবেশ এবং আধুনিক সুযোগ-সুবিধার সাথে প্রাকৃতিক স্পর্শের অনন্য সংমিশ্রণের জন্য 
+        পরিচিত হয়ে উঠেছে। আপনি অবসর, ব্যবসা বা পারিবারিক সময় কাটাতে এখানে থাকুন, রিসর্টটি বিশ্রাম এবং আনন্দের নিখুঁত সমন্বয় নিশ্চিত করে।
+    </p>
+    <p>
+                          
+    </p>
+    <p>
+      Established in <strong>2027</strong>, Kuakata Park & Resort is one of the most 
+      serene and luxurious holiday destinations in Kuakata, Bangladesh. 
+      Surrounded by the beauty of nature, the resort offers guests 
+      an unforgettable escape where comfort meets elegance.
+    </p>
+    <p>
+      Over the years, K Park Resort has become known for its 
+      world-class hospitality, scenic environment, and unique 
+      blend of modern facilities with a natural touch. Whether 
+      you’re here for leisure, business, or family time, our 
+      resort ensures a perfect balance of relaxation and enjoyment.
+    </p>
+
+    <!-- Facebook Video Embed -->
+    <div class="video-container">
+      <h2>Watch Our Resort Video</h2>
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" 
+              src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="FbVideo">
+      </script>
+
+      <div class="fb-video" 
+           data-href="https://www.facebook.com/iplanengineering/videos/1287464109506069/" 
+           data-width="800" 
+           data-show-text="false" 
+           style="max-width: 100%; margin: auto;">
+      </div>
+    </div>
+    <!-- Facilities Grid with Images -->
+<h2>Our Facilities</h2>
+<div class="features">
+  <div class="feature-card">
+    <img src="leaf10.png" alt="Closer Beach" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+    <h3>🏖️ Beach Access</h3>
+    <p>Direct access to Kuakata’s stunning beach for relaxing walks and sunsets.</p>
+  </div>
+  <div class="feature-card">
+    <img src="leaf2.png" alt="Luxury Rooms" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+    <h3>🏨 Luxury Rooms</h3>
+    <p>Spacious and comfortable rooms with modern amenities and ocean views.</p>
+  </div>
+  <div class="feature-card">
+    <img src="leaf3.png" alt="Fine Dining" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+    <h3>🍽️ Fine Dining</h3>
+    <p>A wide variety of cuisines prepared by top chefs in our elegant restaurants.</p>
+  </div>
+  <div class="feature-card">
+    <img src="leaf7.png" alt="Swimming Pool" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+    <h3>🏊 Swimming Pool</h3>
+    <p>Infinity pool overlooking nature, perfect for relaxation.</p>
+  </div>
+  <div class="feature-card">
+    <img src="leaf9.png" alt="Event Spaces" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+    <h3>🎉 Event Spaces</h3>
+    <p>Beautiful venues for weddings, conferences, and celebrations.</p>
+  </div>
+  <div class="feature-card">
+    <img src="leaf7.png" alt="Kids Play Area" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+    <h3>🎠 Kids Play Area</h3>
+    <p>A safe and fun playground for children to enjoy.</p>
+  </div>
+  <div class="feature-card">
+    <img src="leaf11.png" alt="Gym & Fitness" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+    <h3>💪 Gym & Fitness</h3>
+    <p>Fully equipped gym for guests to maintain their fitness routine.</p>
+  </div>
+  <div class="feature-card">
+    <img src="leaf5.png" alt="Garden & Nature Walks" style="width:100%; border-radius:10px; margin-bottom:1rem;">
+    <h3>🌳 Garden & Nature Walks</h3>
+    <p>Beautiful landscaped gardens and walking trails to connect with nature.</p>
+  </div>
+
+   <!-- Google Map Embed -->
+   <h2></h2>
+   <div style="margin: 3rem auto; max-width: 700px; border-radius:15px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.1234567890!2d90.123456!3d21.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3751234567890abc%3A0xabcdef1234567890!2sKuakata%20Park%20Resort!5e0!3m2!1sen!2sbd!4v1693567890123!5m2!1sen!2sbd"
+      width="400%" height="200" style="border:0; display:block; margin:auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    
+  </div>
+</section>
+</div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kuakata Park & Resort. All rights reserved.</p>
+  </footer>
+</body>
+</html>
